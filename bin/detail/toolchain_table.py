@@ -284,6 +284,7 @@ if platform.system() == 'Linux':
 
 if platform.system() == 'Darwin':
   toolchain_table += [
+      Toolchain('imagus-ios', 'Xcode', ios_version='10.3'),
       Toolchain('ios-10-3', 'Xcode', ios_version='10.3'),
       Toolchain('ios-10-3-dep-8-0-bitcode', 'Xcode', ios_version='10.3'),
       Toolchain('ios-10-3-dep-9-0-bitcode', 'Xcode', ios_version='10.3'),
